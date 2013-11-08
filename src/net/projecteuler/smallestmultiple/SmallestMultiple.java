@@ -2,7 +2,7 @@ package net.projecteuler.smallestmultiple;
 
 /**
  * A non-naive approach using Euclid's algorithm to find the greatest common divisor of two numbers;
- * it can be iterated to obtain the GCD of a larger set of numbers.
+ * it can be iterated to obtain the GCD and/or LCM of a larger set of numbers.
  * 
  * @author akaszczuk
  */
