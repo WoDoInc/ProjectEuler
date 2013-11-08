@@ -4,6 +4,11 @@ import java.math.BigInteger;
 
 public class SquareSumDifference
 {
+   /**
+    * Finds the difference for the square of sums and sum of squares.
+    * 
+    * @return Returns the difference.
+    */
    public static BigInteger findDifference()
    {
       BigInteger sumOfSquares = BigInteger.ZERO;
@@ -17,14 +22,14 @@ public class SquareSumDifference
          squareOfSums = squareOfSums.add(BigInteger.valueOf(i));
       }
       squareOfSums = squareOfSums.multiply(squareOfSums);
-      System.out.println("Square of Sums: " + squareOfSums.toString());
-      System.out.println("Sum of Squares: " + sumOfSquares.toString());
       
       return squareOfSums.subtract(sumOfSquares);
    }
    
    /**
-    * @param args
+    * Main Method.
+    * 
+    * @param args Not used.
     */
    public static void main(String[] args)
    {
