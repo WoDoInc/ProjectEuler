@@ -6,9 +6,7 @@ package net.projecteuler.smallestmultiple;
  * 
  * @author akaszczuk
  */
-public class SmallestMultiple
-{
-   
+public class SmallestMultiple {
    /**
     * Finds the greatest common divisor of two numbers.
     * 
@@ -17,10 +15,8 @@ public class SmallestMultiple
     * 
     * @return Returns the GCD for the given pair.
     */
-   private static int gcd(int a, int b)
-   {
-      while (b > 0)
-      {
+   private static int gcd(int a, int b) {
+      while (b > 0) {
          int temp = b;
          b = a % b;
          a = temp;
@@ -36,14 +32,15 @@ public class SmallestMultiple
     * 
     * @return Returns the result of the GCD given a set.
     */
-   public static int gcd(int[] input)
-   {
+   public static int gcd(int[] input) {
       int result = input[0];
-      for(int i = 1; i < input.length; i++)
+      for(int i = 1; i < input.length; i++) {
          result = gcd(result, input[i]);
+      }
+
       return result;
    }
-   
+
    /**
     * Finds the least common multiple of two numbers. 
     * 
@@ -52,8 +49,7 @@ public class SmallestMultiple
     * 
     * @return Returns the LCM of the given pair.
     */
-   private static int lcm(int a, int b)
-   {
+   private static int lcm(int a, int b) {
       return a * (b / gcd(a, b));
    }
 
@@ -65,10 +61,12 @@ public class SmallestMultiple
     * 
     * @return Returns the LCM of the given set.
     */
-   public static int lcm(int[] input)
-   {
+   public static int lcm(int[] input) {
       int result = input[0];
-      for(int i = 1; i < input.length; i++) result = lcm(result, input[i]);
+      for(int i = 1; i < input.length; i++) {
+         result = lcm(result, input[i]);
+      }
+
       return result;
    }
 
@@ -77,10 +75,9 @@ public class SmallestMultiple
     * 
     * @param args Not used.
     */
-   public static void main(String[] args)
-   {
+   public static void main(String[] args) {
       int[] numbers = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-      
+
       System.out.println(SmallestMultiple.lcm(numbers));
    }
 }

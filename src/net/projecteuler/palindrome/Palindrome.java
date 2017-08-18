@@ -1,7 +1,6 @@
 package net.projecteuler.palindrome;
 
-public class Palindrome
-{
+public class Palindrome {
    /**
     * Complete naive brute force to find the largest palindrome given two factors containing three digits. Small
     * optimizations regarding the scope of the problem.
@@ -22,14 +21,11 @@ public class Palindrome
     * 
     * @return returns the largest palindrome as a primitive integer.
     */
-   public static int findLargestPalindrome()
-   {
+   public static int findLargestPalindrome() {
       int maximum = 0;
-      
-      for (int largestTripleDigit = 999; largestTripleDigit > 99; largestTripleDigit--)
-      {
-         for (int factor = 990; factor > 99; factor-=11)
-         {
+
+      for (int largestTripleDigit = 999; largestTripleDigit > 99; largestTripleDigit--) {
+         for (int factor = 990; factor > 99; factor-=11) {
             final int product = factor * largestTripleDigit;
             final String potentialPalindrome = String.valueOf(product);
             
@@ -39,7 +35,7 @@ public class Palindrome
             }
          }
       }
-      
+
       return maximum;
    }
 
@@ -49,23 +45,20 @@ public class Palindrome
     * @param potentialPalindrome The string to validate.
     * @return Returns true if a palindrome is found, false otherwise.
     */
-   private static boolean isPalindrome(String potentialPalindrome)
-   {
+   private static boolean isPalindrome(String potentialPalindrome) {
       final int length = potentialPalindrome.length();
       boolean isPalindrome = true;
-      
-      for (int i = 0; i < length / 2; i++)
-      {
-         if (potentialPalindrome.charAt(i) != potentialPalindrome.charAt(length-i-1))
-         {
+
+      for (int i = 0; i < length / 2; i++) {
+         if (potentialPalindrome.charAt(i) != potentialPalindrome.charAt(length-i-1)) {
             isPalindrome = false;
             break;
          }
       }
-      
+
       return isPalindrome;
    }
-   
+
    /**
     * Main method.
     * 

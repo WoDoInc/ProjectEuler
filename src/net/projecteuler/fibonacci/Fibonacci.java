@@ -13,38 +13,33 @@ import java.math.BigInteger;
  * @author akaszczuk
  *
  */
-public class Fibonacci
-{
+public class Fibonacci {
    /**
     * 
     * @param firstSeed
     * @param secondSeed
     */
-   public static BigInteger calculateFibonacciSequence(BigInteger firstSeed, BigInteger secondSeed, BigInteger finalTerm)
-   {
+   public static BigInteger calculateFibonacciSequence(BigInteger firstSeed, BigInteger secondSeed, BigInteger finalTerm) {
       BigInteger result = BigInteger.ZERO;
 
-      while(secondSeed.compareTo(finalTerm) <= 0) 
-      {
+      while(secondSeed.compareTo(finalTerm) <= 0) {
          final BigInteger fibNumber = firstSeed.add(secondSeed);
          firstSeed = secondSeed;
          secondSeed = fibNumber;
-         
-         if (fibNumber.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO))
-         {
+
+         if (fibNumber.mod(BigInteger.valueOf(2)).equals(BigInteger.ZERO)) {
             System.out.println(fibNumber + " is being added to " + result);
             result = result.add(fibNumber);
          }
       }
-         
+
       return result;
    }
-   
+
    /**
     * @param args
     */
-   public static void main(String[] args)
-   {
+   public static void main(String[] args) {
      BigInteger finalResult = calculateFibonacciSequence(BigInteger.valueOf(0), BigInteger.valueOf(1), BigInteger.valueOf(4000000));
      System.out.println("\nFinal Result: " + finalResult);
    }

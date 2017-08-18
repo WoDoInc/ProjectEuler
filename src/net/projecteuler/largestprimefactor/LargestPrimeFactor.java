@@ -11,24 +11,19 @@ package net.projecteuler.largestprimefactor;
  * @author akaszczuk
  *
  */
-
-public class LargestPrimeFactor
-{
-   public static int largestPrimeFactor(long number)
-   {
+public class LargestPrimeFactor {
+   public static int largestPrimeFactor(long number) {
       int i;
-      for (i = 2; i <= number; i++)
-      {
+      for (i = 2; i <= number; i++) {
          System.out.println("Incremented: " + i);
-         if (number % i == 0)
-         {
+         if (number % i == 0) {
             number /= i;
             i--;
             System.out.println("Decremented: " + i);
          }
          System.out.println("Skipped: " + i);
       }
-          
+
       return i;
    }
 
