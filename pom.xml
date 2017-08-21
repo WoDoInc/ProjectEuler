@@ -5,9 +5,14 @@
 
     <groupId>net.projecteuler.problems</groupId>
     <artifactId>projecteuler-root</artifactId>
-    <name>Project Euler Root</name>
     <packaging>pom</packaging>
+    <name>Project Euler Root</name>
     <version>1.0</version>
+
+    <modules>
+        <module>projecteuler-problem1</module>
+        <module>projecteuler-problem2</module>
+    </modules>
 
     <build>
         <defaultGoal>compile</defaultGoal>

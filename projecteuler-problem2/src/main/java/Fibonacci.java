@@ -35,12 +35,4 @@ public class Fibonacci {
 
       return result;
    }
-
-   /**
-    * @param args
-    */
-   public static void main(String[] args) {
-     BigInteger finalResult = calculateFibonacciSequence(BigInteger.valueOf(0), BigInteger.valueOf(1), BigInteger.valueOf(4000000));
-     System.out.println("\nFinal Result: " + finalResult);
-   }
 }
