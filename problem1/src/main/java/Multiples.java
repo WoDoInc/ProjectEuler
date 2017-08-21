@@ -1,5 +1,3 @@
-package net.projecteuler.multiples;
-
 /**
  * Project Euler Problem #1.
  * 
@@ -19,12 +17,9 @@ public class Multiples {
     * @return Returns the multiple if indeed is a multiple of 3 or 5, otherwise returns 0.
     */
    static int findMultiple(int multiple) {
-      if (multiple % 3 == 0)
-      {
+      if (multiple % 3 == 0) {
          return multiple;
-      }
-      else if (multiple % 5 == 0)
-      {
+      } else if (multiple % 5 == 0) {
          return multiple;
       }
       
@@ -40,19 +35,10 @@ public class Multiples {
    static int findSum(int finalNumber) {
       int result = 0;
       
-      for (int i = 1; i < finalNumber; i++)
-      {
+      for (int i = 1; i < finalNumber; i++) {
          result += findMultiple(i);
       }
       
       return result;
-   }
-
-   /**
-    * @param args
-    */
-   public static void main(String[] args) {
-      // Find the sum of the multiples in all numbers up to 1000.
-      System.out.println("The sum is the following: " + findSum(1000));
    }
 }
