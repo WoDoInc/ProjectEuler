@@ -1,10 +1,6 @@
 package net.projecteuler.problems;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class Palindrome {
-   private static final Logger LOGGER = LoggerFactory.getLogger(Palindrome.class);
    /**
     * Complete naive brute force to find the largest palindrome given two factors containing three digits. Small
     * optimizations regarding the scope of the problem.
@@ -38,7 +34,7 @@ public class Palindrome {
          }
       }
 
-      LOGGER.info("Largest palindrome with three digit factors: {}", maximum);
+      System.out.println("Largest palindrome with three digit factors: " + maximum);
       return maximum;
    }
 

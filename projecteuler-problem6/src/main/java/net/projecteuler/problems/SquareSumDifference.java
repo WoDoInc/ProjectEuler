@@ -22,13 +22,4 @@ public class SquareSumDifference {
 
       return squareOfSums.subtract(sumOfSquares);
    }
-
-   /**
-    * Main Method.
-    * 
-    * @param args Not used.
-    */
-   public static void main(String[] args) {
-      System.out.println("The Difference between the Square of Sums and Sum of Squares is: " + SquareSumDifference.findDifference().toString());
-   }
 }

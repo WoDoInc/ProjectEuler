@@ -1,8 +1,5 @@
 package net.projecteuler.problems;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * Project Euler Problem #1.
  * 
@@ -15,7 +12,6 @@ import org.slf4j.LoggerFactory;
  *
  */
 public class Multiples {
-   private static final Logger LOGGER = LoggerFactory.getLogger(Multiples.class);
    /**
     * Finds whether the number provided is a multiple of 3 or 5.
     * 
@@ -45,7 +41,7 @@ public class Multiples {
          result += findMultiple(i);
       }
 
-      LOGGER.info("The sum is the following: {}", result);
+      System.out.println("The sum is the following: " + result);
       
       return result;
    }

@@ -1,8 +1,5 @@
 package net.projecteuler.problems;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
  * A non-naive approach using Euclid's algorithm to find the greatest common divisor of two numbers;
  * it can be iterated to obtain the GCD and/or LCM of a larger set of numbers.
@@ -10,7 +7,6 @@ import org.slf4j.LoggerFactory;
  * @author akaszczuk
  */
 public class SmallestMultiple {
-   private static final Logger LOGGER = LoggerFactory.getLogger(SmallestMultiple.class);
    /**
     * Finds the greatest common divisor of two numbers.
     * 
@@ -71,7 +67,7 @@ public class SmallestMultiple {
          result = lcm(result, input[i]);
       }
 
-      LOGGER.info("Least common multiple set: {}", result);
+      System.out.println("Least common multiple set: " + result);
       return result;
    }
 }

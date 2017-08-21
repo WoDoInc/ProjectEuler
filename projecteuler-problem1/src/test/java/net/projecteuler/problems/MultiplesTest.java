@@ -1,8 +1,8 @@
 package net.projecteuler.problems;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static junit.framework.Assert.assertEquals;
 
 public class MultiplesTest {
     @Test

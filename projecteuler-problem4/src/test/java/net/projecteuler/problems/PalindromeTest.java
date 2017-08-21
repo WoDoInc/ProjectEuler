@@ -1,12 +1,12 @@
 package net.projecteuler.problems;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class PalindromeTest {
     @Test
     public void findLargestPalindromeTest() {
-        assertEquals(6857L, Palindrome.findLargestPalindrome());
+        assertEquals(906609, Palindrome.findLargestPalindrome());
     }
 }

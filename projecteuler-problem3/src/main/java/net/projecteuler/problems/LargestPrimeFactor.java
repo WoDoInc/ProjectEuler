@@ -25,14 +25,7 @@ public class LargestPrimeFactor {
          }
       }
 
+      System.out.println("Largest Prime Factor: " + i);
       return i;
-   }
-
-   /**
-    * @param args
-    */
-   public static void main(String[] args)
-   {
-      System.out.println(largestPrimeFactor(600851475143l));
    }
 }
