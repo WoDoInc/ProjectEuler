@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>projecteuler-problem1</artifactId>
-    <name>Problem 1 - Multiples of 3 and 5</name>
-    <description>Find the sum of all the multiples of 3 or 5 below 1000.</description>
+    <artifactId>projecteuler-problem4</artifactId>
+    <name>Problem 4 - Largest palindrome product</name>
+    <description>Find the largest palindrome made from the product of two 3-digit numbers.</description>
     <version>1.0</version>
     <dependencies>
         <dependency>

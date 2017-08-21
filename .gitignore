@@ -2,4 +2,4 @@ bin/
 target/
 .idea/
 .settings/
-ProjectEuler.iml
+**/*.iml

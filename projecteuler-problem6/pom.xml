@@ -9,9 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>projecteuler-problem1</artifactId>
-    <name>Problem 1 - Multiples of 3 and 5</name>
-    <description>Find the sum of all the multiples of 3 or 5 below 1000.</description>
+    <artifactId>projecteuler-problem6</artifactId>
+    <name>Problem 6 - Sum square difference</name>
+    <description>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</description>
     <version>1.0</version>
     <dependencies>
         <dependency>
