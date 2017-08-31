@@ -5,29 +5,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LargestProduct {
-    private final List<Integer> numbers;
+    private final String numbers;
 
 
-    public LargestProduct(List<Integer> numbers) {
+    public LargestProduct(String numbers) {
         this.numbers = numbers;
     }
 
     public BigInteger findLargestProduct() {
-        List<Integer> window = new CircularQueue(13);
-        List<Integer> results = new ArrayList(13);
+        final List<Integer> window = new CircularQueue(12);
+        //List<Integer> results = new ArrayList(12);
         BigInteger total = BigInteger.ZERO;
 
-        for (final Integer number : numbers) {
-            results.add(number);
+        for (char number : numbers.toCharArray()) {
+            window.add(Character.getNumericValue(number));
             final BigInteger newProduct = getProduct(window);
+            System.out.println("Current Total: " + total.toString());
+            System.out.println("Current Series: " + window.toString());
             if (total.compareTo(newProduct) < 0) {
                 total = newProduct;
-                results = window;
+                //results.clear();
+                //results.addAll(window);
+                System.out.println("Updated Total: " + total.toString());
+                //System.out.println("Updated Series: " + results.toString());
             }
         }
 
         System.out.println("Total: " + total.toString());
-        System.out.println("Series: " + results.toString());
+        //System.out.println("Series: " + results.toString());
 
         return total;
     }
