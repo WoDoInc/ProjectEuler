@@ -17,6 +17,7 @@
         <module>projecteuler-problem5</module>
         <module>projecteuler-problem6</module>
         <module>projecteuler-problem7</module>
+        <module>projecteuler-problem8</module>
     </modules>
 
     <build>

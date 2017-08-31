@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>projecteuler-root</artifactId>
+        <groupId>net.projecteuler.problems</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>projecteuler-problem8</artifactId>
+    <name>Problem 8 - Largest product in a series</name>
+    <description>Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?</description>
+    <version>1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
